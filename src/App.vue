@@ -1,31 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
 #app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
+  background-color: chocolate;
+  border-radius: 10px;
 
-#nav {
-  padding: 30px;
+  button:not([class$='delete-btn']) {
+    padding: 0 16px;
+    height: 36px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 2px 4px -1px #000350;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    &:hover {
+      background-color: #fafafad7;
     }
   }
 }
