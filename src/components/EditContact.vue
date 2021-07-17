@@ -3,7 +3,7 @@
     <h3>Edit contact</h3>
     <div class="edit-contact-form">
       <form @submit.prevent="updateContact()">
-        <div v-for="(value, key, index) in contact" :key="index">
+        <div v-for="(value, key) in contact" :key="key">
           <div v-if="key !== 'id'">
             <label>{{ key }}:</label>
             <input type="text" v-model="contact[key]" required />
@@ -96,7 +96,7 @@ export default {
       }
     },
     isFieldEmpty() {
-      return Object.keys(this.contact).some((field) => this.contact[field] === '');
+      return Object.values(this.contact).some((field) => field === '');
     },
   },
 };

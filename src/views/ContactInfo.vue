@@ -5,7 +5,7 @@
 
     <template v-if="showEditContact"> <edit-contact @closeUpdateForm="showEditContact = false" /> </template>
     <div v-else>
-      <div v-for="(value, key, index) in contact" :key="index" class="contact-info__description">
+      <div v-for="(value, key) in contact" :key="key" class="contact-info__description">
         <p v-if="key !== 'id'">
           <span>{{ key }}:</span>
           <span>{{ value }}</span>
@@ -24,6 +24,7 @@
 import EditContact from '@/components/EditContact.vue';
 
 export default {
+  name: 'ContactInfo',
   components: {
     EditContact,
   },
