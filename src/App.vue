@@ -14,7 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: chocolate;
+  background-color: #d2691e;
   border-radius: 10px;
 
   button:not([class$='delete-btn']) {

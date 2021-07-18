@@ -107,7 +107,7 @@ export default {
   max-width: 600px;
   margin: 20px auto;
   padding: 50px;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a9;
   border-radius: 10px;
   background-color: #fff;
 
@@ -132,7 +132,7 @@ export default {
     padding: 5px;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgb(185, 178, 178);
+    border-bottom: 1px solid #b9b2b2;
 
     &:focus {
       border-bottom: 2px solid #000;
@@ -148,7 +148,7 @@ export default {
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: red;
+      background-color: #ff0000;
       color: #fff;
     }
   }

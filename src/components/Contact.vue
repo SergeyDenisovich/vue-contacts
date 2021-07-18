@@ -42,8 +42,8 @@ export default {
   &__delete-btn {
     border: none;
     cursor: pointer;
-    background-color: red;
-    color: white;
+    background-color: #ff0000;
+    color: #ffffff;
     outline: none;
   }
 }
