@@ -2,11 +2,11 @@
   <div class="add-contact-form">
     <form @submit.prevent="addContact">
       <h3>New contact:</h3>
-      <input v-model.trim="name" type="text" placeholder="Name:" />
+      <input v-model.trim="name" type="text" placeholder="Name:" required />
 
-      <input v-model.trim="email" type="email" placeholder="E-mail:" />
+      <input v-model.trim="email" type="email" placeholder="E-mail:" required />
 
-      <input v-model.trim="phone" type="tel" placeholder="Phone:" />
+      <input v-model.trim="phone" type="tel" placeholder="Phone:" required />
       <div class="add-contact-form__btn-group">
         <button type="submit">Save</button>
         <button @click.prevent="cancelAdd">Cancel</button>
