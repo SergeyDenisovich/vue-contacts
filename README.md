@@ -1,7 +1,8 @@
-# Contacts book app
+# Vue contacts app
 
-App store data in browser localStorage and has
-next functionality: create contact, delete contact and some features to update contact
+App store data (contacts) in browser localStorage and has
+next functionality: create contact, delete contact, cancel editing contact,
+undo last change
 
 ## Project setup
 
@@ -14,13 +15,3 @@ npm install
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
