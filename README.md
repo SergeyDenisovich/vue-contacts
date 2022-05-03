@@ -1,4 +1,4 @@
-# Vue contacts app
+# [Vue contacts app](https://sergeydenisovich.github.io/vue-contacts/)
 
 App store data (contacts) in browser localStorage and has
 next functionality: create contact, delete contact, cancel editing contact,
